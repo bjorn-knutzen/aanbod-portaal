@@ -1,0 +1,715 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Aanbodportaal</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="stylesheet" href="../media/styles/reset.css">
+		<link rel="stylesheet" href="../media/styles/huisstijl.css">
+		<link rel="stylesheet" href="../media/styles/main.css">
+        <link rel="stylesheet" href="../media/styles/normalize.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+		<script src="../media/scripts/main.js"></script>		
+        <script src="../media/scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>	
+		<script src="js/jquery-ui-datepicker.min.js"></script>
+    </head>
+	<body class="huisstijl-body">
+		<div class="main-container informatie">
+			<div class="head-container">
+				<header class="header">
+					<a href="http://www.wsz.nl/" class="brand-logo"></a>
+				</header>
+			</div>
+			<div class="navigation-container">
+				<nav class="main-navigation">
+					<ul>
+						<li>
+							<a href="#" class="dropdown-button" ><i class="fa fa-bars"></i></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="../index.html">Home<i class="open">&nbsp;</i></a>
+								</li>
+								<li>
+									<a href="../ons-huuraanbod/ons-huuraanbod.html">Ons huuraanbod<i class="open">&nbsp;</i></a>
+								</li>
+								<li>
+									<a href="../ons-koopaanbod/ons-koopaanbod.html">Ons koopaanbod<i class="open">&nbsp;</i></a>
+								</li>
+								<li class="active">
+									<a href="../informatie/informatie.html">Informatie<i class="open">&nbsp;</i></a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<a  href="inloggen" class="login-button default-button"><i class="fa fa-user"></i>Inloggen</a>
+				</nav>
+			</div>			
+			
+			<div class="main-content clearfix">							
+				<div class="objects-container object-detail-page clearfix">
+					<h1 class="heading-text">Inschrijven</h1>
+					<form class="form-container" action="action_page.php" method="post" autocomplete="on">
+						<fieldset>
+							<h2>Persoonlijke gegevens</h2>
+							<span>
+								<label>Voorletters :</label>
+								<input type="text" name="Voorletters" placeholder="Voorletters" required />
+							</span>
+															
+							<span>
+								<label>Tussenvoegsel :</label>
+								<input type="text" name="Tussenvoegsel" placeholder="Tussenvoegsel" required />
+							</span>
+							
+							<span>
+								<label>Achternaam :</label>
+								<input class="inputfield" type="text" name="Achternaam" placeholder="Achternaam" required />
+							</span>
+							
+							<span>
+								<label class="radio-button-label">geslacht :</label>
+								<input type="radio" name="sex" value="male" checked> Male
+								<input type="radio" name="sex" value="female"> Female
+							</span>
+							<span>
+								<label>Geboortedatum (dd-mm-jjjj) :</label>
+								<input type="text" name="Geboortedatum" placeholder="Geboortedatum (dd-mm-jjjj)" required />
+							</span>
+							
+							<span>
+								<label>Telefoonnummer privé :</label>
+								<input type="text" name="Telefoonnummer privé" placeholder="Telefoonnummer privé" required />
+							</span>
+											
+							<span>
+								<label>BSN burger service nummer:</label>
+								<input type="text" name="BSN" placeholder="BSN" required />
+							</span>
+
+							<span>
+								<label>Rekening nummer IBAN:</label>
+								<input type="text" name="rekeningnummer" placeholder="Rekening nummer IBAN" required />
+							</span>
+						</fieldset>
+						
+						<fieldset>
+							<h2>Woonadres</h2>
+							<span>
+								<label>Land  :</label>
+								<select  class="land-dropdown">    
+									<option value="">[Maak een keuze]</option>    
+									<option value="AF">Afghanistan</option>    
+									<option value="AL">Albanie</option>    
+									<option value="DZ">Algerije</option>    
+									<option value="UM">Amerikaanse ondergeschikte afgelegen eilanden</option>    
+									<option value="AS">Amerikaans-Samoa</option>    
+									<option value="AD">Andorra</option>    
+									<option value="AO">Angola</option>
+									<option value="AI">Anguilla</option>    
+									<option value="AQ">Antarctica</option>    
+									<option value="AG">Antigua en Barbuda</option>    
+									<option value="AR">Argentinie</option>    
+									<option value="AM">Armenie</option>    
+									<option value="AW">Aruba</option>    
+									<option value="AU">Australie</option>    
+									<option value="AZ">Azerbeidzjan</option>    
+									<option value="BS">Bahama's</option>    
+									<option value="BH">Bahrein</option>    
+									<option value="BD">Bangladesh</option>    
+									<option value="BB">Barbados</option>    
+									<option value="BY">Belarus</option>    
+									<option value="BE">Belgie</option>    
+									<option value="BZ">Belize</option>    
+									<option value="BJ">Benin</option>    
+									<option value="BM">Bermuda</option>    
+									<option value="BT">Bhutan</option>    
+									<option value="BO">Bolivia</option>    
+									<option value="BA">Bosnie en Herzegovina</option>    
+									<option value="BW">Botswana</option>    
+									<option value="BV">Bouveteiland</option>   
+									<option value="BR">Brazilie</option>    
+									<option value="IO">Brits gebied in de Indische Oceaan</option>   
+									<option value="VG">Britse Maagdeneilanden</option>    
+									<option value="BN">Brunei Darussalam</option>    
+									<option value="BG">Bulgarije</option>    
+									<option value="BF">Burkina Faso</option>    
+									<option value="BI">Burundi</option>    
+									<option value="KH">Cambodja</option>    
+									<option value="CA">Canada</option>    
+									<option value="KY">Caymaneilanden</option>    
+									<option value="CF">Centraal-Afrika</option>    
+									<option value="CL">Chili</option> 
+									<option value="CN">China</option>    
+									<option value="CX">Christmaseiland</option>    
+									<option value="CC">Cocoseilanden</option>    
+									<option value="CO">Colombia</option>    
+									<option value="KM">Comoren</option>    
+									<option value="CG">Congo</option>    
+									<option value="CK">Cookeilanden</option>    
+									<option value="CR">Costa Rica</option>    
+									<option value="CU">Cuba</option>    
+									<option value="CY">Cyprus</option>    
+									<option value="DK">Denemarken</option>    
+									<option value="DJ">Djibouti</option>    
+									<option value="DO">Dominicaanse Republiek</option>    
+									<option value="DE">Duitsland</option>
+									<option value="EC">Ecuador</option>
+								
+									<option value="EG">Egypte</option>
+								
+									<option value="SV">El Salvador</option>
+								
+									<option value="EN">Engeland</option>
+								
+									<option value="GQ">Equatoriaal-Guinea</option>
+								
+									<option value="ER">Eritrea</option>
+								
+									<option value="EE">Estland</option>
+								
+									<option value="ET">Ethiopie</option>
+								
+									<option value="FO">Faeroer</option>
+								
+									<option value="FK">Falklandeilanden en onderhorigheden</option>
+								
+									<option value="FJ">Fiji-eilanden</option>
+								
+									<option value="PH">Filipijnen</option>
+								
+									<option value="FI">Finland</option>
+								
+									<option value="FR">Frankrijk</option>
+								
+									<option value="TF">Franse gebied in de zuidelijke Indische Oceaan</option>
+								
+									<option value="GF">Frans-Guyana</option>
+								
+									<option value="PF">Frans-Polynesie</option>
+								
+									<option value="GA">Gabon</option>
+								
+									<option value="GM">Gambia</option>
+								
+									<option value="DM">Gemenebest Dominica</option>
+								
+									<option value="GE">Georgie</option>
+								
+									<option value="GH">Ghana</option>
+								
+									<option value="GI">Gibraltar</option>
+								
+									<option value="GD">Grenada</option>
+								
+									<option value="GR">Griekenland</option>
+								
+									<option value="GL">Groenland</option>
+								
+									<option value="GB">Groot-Brittannie</option>
+								
+									<option value="GP">Guadeloupe</option>
+								
+									<option value="GU">Guam</option>
+								
+									<option value="GT">Guatemala</option>
+								
+									<option value="GN">Guinee</option>
+								
+									<option value="GW">Guinee-Bissau</option>
+								
+									<option value="GY">Guyana</option>
+								
+									<option value="HT">Haiti</option>
+								
+									<option value="HM">Heard- en McDonaldeilanden</option>
+								
+									<option value="HN">Honduras</option>
+								
+									<option value="HU">Hongarije</option>
+								
+									<option value="HK">Hongkong</option>
+								
+									<option value="IE">Ierland</option>
+								
+									<option value="IS">IJsland</option>
+								
+									<option value="IN">India</option>
+								
+									<option value="ID">Indonesie</option>
+								
+									<option value="IQ">Irak</option>
+								
+									<option value="IR">Iran</option>
+								
+									<option value="IL">Israel</option>
+								
+									<option value="IT">Italie</option>
+								
+									<option value="CI">Ivoorkust</option>
+								
+									<option value="JM">Jamaica</option>
+								
+									<option value="JP">Japan</option>
+								
+									<option value="YE">Jemen</option>
+								
+									<option value="JO">Jordanie</option>
+								
+									<option value="CV">Kaapverdie</option>
+								
+									<option value="CM">Kameroen</option>
+								
+									<option value="KZ">Kazachstan</option>
+								
+									<option value="KE">Kenia</option>
+								
+									<option value="KG">Kirgizie</option>
+								
+									<option value="KI">Kiribati</option>
+								
+									<option value="KW">Koeweit</option>
+								
+									<option value="HR">Kroatie</option>
+								
+									<option value="LA">Laos</option>
+								
+									<option value="LS">Lesotho</option>
+								
+									<option value="LV">Letland</option>
+								
+									<option value="LB">Libanon</option>
+								
+									<option value="LR">Liberia</option>
+								
+									<option value="LY">Libie</option>
+								
+									<option value="LI">Liechtenstein</option>
+								
+									<option value="LT">Litouwen</option>
+								
+									<option value="LU">Luxemburg</option>
+								
+									<option value="VI">Maagdeneilanden</option>
+								
+									<option value="MO">Macau</option>
+								
+									<option value="MK">Macedonie</option>
+								
+									<option value="MG">Madagaskar</option>
+								
+									<option value="MW">Malawi</option>
+								
+									<option value="MV">Maldiven</option>
+								
+									<option value="MY">Maleisie</option>
+								
+									<option value="ML">Mali</option>
+								
+									<option value="MT">Malta</option>
+								
+									<option value="MP">Marianen</option>
+								
+									<option value="MA">Marokko</option>
+								
+									<option value="MH">Marshalleilanden</option>
+								
+									<option value="MQ">Martinique</option>
+								
+									<option value="MR">Mauritanie</option>
+								
+									<option value="MU">Mauritius</option>
+								
+									<option value="YT">Mayotte</option>
+								
+									<option value="MX">Mexico</option>
+								
+									<option value="FM">Micronesia</option>
+								
+									<option value="MD">Moldavie</option>
+								
+									<option value="MC">Monaco</option>
+								
+									<option value="MN">Mongolie</option>
+								
+									<option value="MS">Montserrat</option>
+								
+									<option value="MZ">Mozambique</option>
+								
+									<option value="MM">Myanmar</option>
+								
+									<option value="NA">Namibie</option>
+								
+									<option value="NR">Nauru</option>
+								
+									<option selected="selected" value="NL">Nederland</option>
+								
+									<option value="AN">Nederlandse Antillen</option>
+								
+									<option value="NP">Nepal</option>
+								
+									<option value="NI">Nicaragua</option>
+								
+									<option value="NC">Nieuw-Caledonie</option>
+								
+									<option value="NZ">Nieuw-Zeeland</option>
+								
+									<option value="NE">Niger</option>
+								
+									<option value="NG">Nigeria</option>
+								
+									<option value="NU">Niue</option>
+								
+									<option value="KR">Noord Korea</option>
+								
+									<option value="NO">Noorwegen</option>
+								
+									<option value="NF">Norfolkeiland</option>
+								
+									<option value="UA">Oekraine</option>
+								
+									<option value="UZ">Oezbekistan</option>
+								
+									<option value="OM">Oman</option>
+								
+									<option value="9999">Onbekend</option>
+								
+									<option value="AT">Oostenrijk</option>
+								
+									<option value="TL">Oost-Timor</option>
+								
+									<option value="PK">Pakistan</option>
+								
+									<option value="PW">Palau</option>
+								
+									<option value="PS">Palestina</option>
+								
+									<option value="PA">Panama</option>
+								
+									<option value="PG">Papoea-Nieuw-Guinea</option>
+								
+									<option value="PY">Paraguay</option>
+								
+									<option value="PE">Peru</option>
+								
+									<option value="PN">Pitcairneilanden</option>
+								
+									<option value="PL">Polen</option>
+								
+									<option value="PT">Portugal</option>
+								
+									<option value="PR">Puerto Rico</option>
+								
+									<option value="QA">Qatar</option>
+								
+									<option value="RE">Reunion</option>
+								
+									<option value="RO">Roemenie</option>
+								
+									<option value="RU">Russische Federatie</option>
+								
+									<option value="RW">Rwanda</option>
+								
+									<option value="KN">Saint Kitts en Nevis</option>
+								
+									<option value="LC">Saint Lucia</option>
+								
+									<option value="VC">Saint Vincent en de Grenadines</option>
+								
+									<option value="PM">Saint-Pierre en Miquelon</option>
+								
+									<option value="SB">Salomonseilanden</option>
+								
+									<option value="WS">Samoa</option>
+								
+									<option value="SM">San Marino</option>
+								
+									<option value="ST">Sao Tome en Principe</option>
+								
+									<option value="SA">Saudi-Arabie</option>
+								
+									<option value="SN">Senegal</option>
+								
+									<option value="YU">Servie en Montenegro</option>
+								
+									<option value="SC">Seychellen</option>
+								
+									<option value="SL">Sierra Leone</option>
+								
+									<option value="SG">Singapore</option>
+								
+									<option value="SH">Sint-Helena</option>
+								
+									<option value="SI">Slovenie</option>
+								
+									<option value="SK">Slowakije</option>
+								
+									<option value="SO">Somalie</option>
+								
+									<option value="ES">Spanje</option>
+								
+									<option value="LK">Sri Lanka</option>
+								
+									<option value="SD">Sudan</option>
+								
+									<option value="SR">Suriname</option>
+								
+									<option value="SJ">Svalbard en Jan Mayen</option>
+								
+									<option value="SZ">Swaziland</option>
+								
+									<option value="SY">Syrie</option>
+								
+									<option value="TJ">Tadzjikistan</option>
+								
+									<option value="TW">Taiwan</option>
+								
+									<option value="TZ">Tanzania</option>
+								
+									<option value="TH">Thailand</option>
+								
+									<option value="TG">Togo</option>
+								
+									<option value="TK">Tokelau-eilanden</option>
+								
+									<option value="TO">Tonga</option>
+								
+									<option value="TT">Trinidad en Tobago</option>
+								
+									<option value="TD">Tsjaad</option>
+								
+									<option value="CZ">Tsjechie</option>
+								
+									<option value="TN">Tunesie</option>
+								
+									<option value="TR">Turkije</option>
+								
+									<option value="TM">Turkmenistan</option>
+								
+									<option value="TC">Turks- en Caicoseilanden</option>
+								
+									<option value="TV">Tuvalu</option>
+								
+									<option value="UG">Uganda</option>
+								
+									<option value="UY">Uruguay</option>
+								
+									<option value="VU">Vanuatu</option>
+								
+									<option value="VA">Vaticaanstad</option>
+								
+									<option value="VE">Venezuela</option>
+								
+									<option value="AE">Verenigde Arabische Emiraten</option>
+								
+									<option value="US">Verenigde Staten van Amerika</option>
+								
+									<option value="VN">Vietnam</option>
+								
+									<option value="WF">Wallis en Futuna</option>
+								
+									<option value="ZM">Zambia</option>
+								
+									<option value="ZW">Zimbabwe</option>
+								
+									<option value="KP">Zuid Korea</option>
+								
+									<option value="ZA">Zuid-Afrika</option>
+								
+									<option value="GS">Zuid-Georgie en Zuidelijke Sandwicheilanden</option>
+								
+									<option value="SE">Zweden</option>
+								
+									<option value="CH">Zwitserland</option>
+								
+							</select>
+							</span>
+							<span>
+								<label>Staat en huisnummer :</label>
+								<input type="text" name="staat" placeholder="Staat" required />
+							</span>
+							<span>
+								<input type="text" name="huisnummer" placeholder="Huisnummer" required />
+							</span>
+							<span>
+								<input type="text" name="huisnummer toevoeging" placeholder="Huisnummer toevoeging" required />
+							</span>
+							<span>
+								<label>Huisnummer toevoeging  :</label>
+								<input type="text" name="Huisnummer toevoeging" placeholder="Huisnummer toevoeging" required />
+							</span>
+							<span>
+								<label>Postcode en plaats :</label>
+								<input class="small-field" type="text" name="Postcode" placeholder="Postcode" required />
+								<input class="medium-field" type="text" name="Plaats" placeholder="Plaats" required />
+							</span>
+
+						</fieldset>
+						<fieldset>
+							<h2>Woonsituatie</h2>
+							<span>
+								<label>Huidige woonsituatie :</label>
+								<select>    
+									<option value="">[Maak een keuze]</option>    
+									<option value="Inwonend bij ouders">Inwonend bij ouders</option>    
+									<option value="Huurwoning WSZ">Huurwoning WSZ</option>    
+									<option value="Huur woning andere verhuurder">Huurwoning andere verhuurder</option>    
+									<option value="Koopwoning">Koopwoning</option>    
+									<option value="Op kamers">Op kamers</option>    
+									<option value="Anders">Anders</option>    
+								</select>
+							</span>
+							<span>
+								<label>Huidige woonsituatie :</label>
+								<select>    
+									<option value="">[Maak een keuze]</option>    
+									<option value="Ongehuwd">Ongehuwd</option>    
+									<option value="Samenwonend">Samenwonend</option>    
+									<option value="Gescheiden">Gescheiden</option>    
+									<option value="Geregistreerd partnerschap">Geregistreerd partnerschap</option>    
+									<option value="Gehuwd">Gehuwd</option>
+									<option value="Onbekend">Onbekend</option>    
+									<option value="Weduwe\Weduwenaar">Weduwe/Weduwnaar</option>    
+								</select>
+							</span>
+							<span>
+								<label>Aantal kinderen en volwassenen :</label>
+								<input type="text" name="Aantal personen" placeholder="Aantal kinderen en volwassenen" required />
+							</span>
+							<span>
+								<label class="radio-button-label">Wilt u uw partner registreren?  :</label>
+								<input type="radio" name="partner-registreren" value="Nee" checked> Nee
+								<input type="radio" name="partner-registreren" value="ja"> Ja
+							</span>	
+							<span>
+								<label>Postcode en plaats :</label>
+								<input class="small-field" type="text" name="Postcode" placeholder="Postcode" required />
+								<input class="medium-field" type="text" name="Plaats" placeholder="Plaats" required />
+							</span>							
+						</fieldset>
+						<fieldset>
+							<h2>Aanmeldgegevens </h2>
+							<span>
+								<label>E-mailadres  :</label>
+								<input type="text" name="E-mailadres" placeholder="E-mailadres" required />		
+							</span>
+							<div class="generic-terms">
+								<label>
+									<br />
+								</label>
+								<span id="check-box-element">
+									<input type="checkbox" name="checkbox1" id="checkbox1" class="check-toggle" checked="">
+									<label for="checkbox1" class="checkbox-label"></label>
+								</span>								
+								<p>Ik ga accord met de <a href="#">algemene voorwaarden.</a></p>							
+							</div>
+							
+							<span>
+								<input type="submit"  value="Inschrijven" class="default-button themeColorLight">								
+							</span>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="footer-container">
+				<div class="footer-nav-container">
+					<div class="footer-nav">
+						<ul class="nav-block">
+							<li>
+								<h4>Direct naar....</h4>
+							</li>
+							<li>
+								<a href="../ons-huuraanbod/ons-huuraanbod.html">Huuraanbod</a>
+							</li>
+							<li>
+								<a href="../ons-koopaanbod/ons-koopaanbod.html">Koopaanbod</a>
+							</li>
+							<li>
+								<a href="#">Informatie</a>
+							</li>
+						</ul>	
+						<ul class="nav-block">
+							<li>
+								<h4>Contact</h4>
+							</li>
+							<li>
+								<a href="mailto:wsz@wsz.nl">E-mail: wsz@wsz.nl</a>
+							</li>
+							<li>
+								<p>Telefoon:(0497) 517 835</p>
+							</li>
+							<li>
+								<p>Fax:(0497) 518 282</p>
+							</li>
+							<li>
+								<h5>Postadres:</h5>
+								<p>Postbus 151</p>
+								<p>5521 AD Eersel</p>
+							</li>
+						</ul>	
+						<ul class="nav-block">
+							<li>
+								<h4>Bezoekersadres</h4>
+								<h5>Bezoekadres</h5>
+								<p>Dijk 16</p>
+								<p>5521 AX Eersel</p>
+							</li>
+						</ul>	
+						<ul class="nav-block">
+							<li>
+								<h4>Bezoekersinformatie</h4>
+							</li>
+							<li>
+								<h5>Openingstijden balie</h5>
+								<p>Ma t/m Vr: 8.30 tot 12.30 uur</p>
+							</li>
+							<li>
+								<h5>Openingstijden</h5>
+								<p>Ma t/m Do 8.30 tot 17.00 uur</p>
+								<p>Vrijdag: 8.30 tot 12.30 uur</p>
+							</li>
+						</ul>						
+					</div>
+				</div>	
+				<div class="footer">
+					<p>
+						&copy; 2014 Woningstichting de Zaligheden
+					</p>			
+					<ul class="footer_information_links">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Algemene voorwaarden</a>
+						</li>
+					</ul>
+					<div class="social-container">
+						<a class="social-xl" href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a class="social-xl" href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+					</div>
+				</div>	
+			</div>	
+		</div>
+				
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="../media/scripts/main.js"></script>
+		<script src="../media/scripts/01.aanbod.dropDown.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+	</body>
+</html>
