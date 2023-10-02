@@ -1,0 +1,98 @@
+@media only screen and (min-width: 1024px) {
+    
+    .navigation-container{
+        height: 60px;
+        background: $white-color;
+        border-bottom: 1px solid $theme-color-dark;
+        margin-bottom: 10px;
+        position: relative;
+                    
+        .main-navigation{
+            width: 1024px;			
+            margin: 0 auto;
+            border: 0;
+            
+            ul{
+                width: 90%;
+                float: left;
+                
+                .fa-bars{
+                    display: none;
+                }
+            }
+
+            .show{
+                display: block;
+            }			
+            .dropdown-menu{
+                border-top: 0px;
+                display: block;
+                background: none;
+                padding-top: 28px;				
+                .active{
+                    border-bottom: 1px solid $theme-color-light;	
+                    .open{					
+                        display: block;			
+                    }
+                }					
+                .open{
+                    width: 9px;
+                    height: 9px;
+                    display: none;
+                    top: 24px;
+                    left: 45%;
+                    right: -45%;				
+                    position: absolute;
+                    background: url(../../../images/huisstijl/open.png) 0px 0px no-repeat;
+                }
+                
+                li{
+                    display: inline-block;
+                    border-bottom: 0px;					
+                    padding-bottom: 9px;
+                    
+                    &:hover{
+                        background: none;	
+                        border-bottom: 1px solid $theme-color-light;	
+                        .open{
+                            display: block;
+                        }
+                    }
+    
+                    
+                    a{
+                        display: inline-block;						
+                        width: initial;
+                        padding: 0px 10px 0px 10px;
+                        line-height: 5px;						
+                        color: $theme-color-lightest;
+                        white-space: nowrap; 
+                        position: relative;
+                        &:hover{
+                            color: $theme-color-dark;
+
+                        }
+                    }
+                }		
+            }	
+            .login-button{
+                width: 123px;
+                height: 30px;
+                font-size: 17px;
+                top: 21px;
+                left: 84%; 
+                text-transform: uppercase;
+                color: $theme-color-light;
+                .fa-user{
+                    margin-right: 10px;
+                        color: $theme-color-light;
+                }	
+                
+                &:hover{
+                    border-bottom: 1px solid $theme-color-light;
+                        color: $theme-color-dark;
+                }
+            }
+        }		
+    }
+}

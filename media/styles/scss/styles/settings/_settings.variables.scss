@@ -103,7 +103,7 @@ a:visited{
 	min-height: 60px;
 	width: 10px;
 	float: right;       
-	background: url(../../media/images/greater-then-icon-big.gif) no-repeat center;
+	background: url(../../../images/greater-then-icon-big.gif) no-repeat center;
 }
 
 .greater-then-icon-reverse-big{
@@ -138,17 +138,7 @@ html {
       overflow: hidden;
   }
   
-  .header{
-      background: $white-color;
-      padding: 5px 0 0 20px;
-      
-      .brand-logo{
-          width: 100%;
-          display: inline-block;
-      }
-  }
-  
-      
+
       .popup{
           height: 80%;
           margin-top: 106px;
@@ -267,132 +257,13 @@ html {
           }
       }
   }
-  
-  @media only screen and (min-width: 480px) {
-  
-  }
-  
-  @media only screen and (min-width: 768px) {
-      
-  }
-  
+ 
   @media only screen and (min-width: 1024px) {
       
       .main-content{
           margin: 50px auto;
       }
       
-      .head-container{
-          background: $white-color;
-          .header{
-              width: 1024px;
-              position: relative;
-              margin: 0 auto;
-              padding-left: 0;
-              border: 0;
-              .brand-logo{
-                  width: 250px;
-                  display: inline-block;
-              }
-          }		
-      }
-      
-      .navigation-container{
-          height: 60px;
-          background: $white-color;
-          border-bottom: 1px solid $theme-color-dark;
-          margin-bottom: 10px;
-          position: relative;
-                      
-          .main-navigation{
-              width: 1024px;			
-              margin: 0 auto;
-              border: 0;
-              
-              ul{
-                  width: 90%;
-                  float: left;
-                  
-                  .fa-bars{
-                      display: none;
-                  }
-              }
-  
-              .show{
-                  display: block;
-              }			
-              .dropdown-menu{
-                  border-top: 0px;
-                  display: block;
-                  background: none;
-                  padding-top: 28px;				
-                  .active{
-                      border-bottom: 1px solid $theme-color-light;	
-                      .open{					
-                          display: block;			
-                      }
-                  }					
-                  .open{
-                      width: 9px;
-                      height: 9px;
-                      display: none;
-                      top: 24px;
-                      left: 45%;
-                      right: -45%;				
-                      position: absolute;
-                      background: url(../../../images/huisstijl/open.png) 0px 0px no-repeat;
-                  }
-                  
-                  li{
-                      display: inline-block;
-                      border-bottom: 0px;					
-                      padding-bottom: 9px;
-                      
-                      &:hover{
-                          background: none;	
-                          border-bottom: 1px solid $theme-color-light;	
-                          .open{
-                              display: block;
-                          }
-                      }
-      
-                      
-                      a{
-                          display: inline-block;						
-                          width: initial;
-                          padding: 0px 10px 0px 10px;
-                          line-height: 5px;						
-                          color: $theme-color-lightest;
-                          white-space: nowrap; 
-                          position: relative;
-                          &:hover{
-                              color: $theme-color-dark;
-  
-                          }
-                      }
-                  }		
-              }	
-              .login-button{
-                  width: 123px;
-                  height: 30px;
-                  font-size: 17px;
-                  top: 21px;
-                  left: 84%; 
-                  text-transform: uppercase;
-                  color: $theme-color-light;
-                  .fa-user{
-                      margin-right: 10px;
-                          color: $theme-color-light;
-                  }	
-                  
-                  &:hover{
-                      border-bottom: 1px solid $theme-color-light;
-                          color: $theme-color-dark;
-                  }
-              }
-          }		
-      }
-  
       .main-content{		
           padding-bottom: 380px;
           margin-bottom: 0px;
