@@ -23,18 +23,21 @@
 
             .show{
                 display: block;
-            }			
+            }		
+
             .dropdown-menu{
                 border-top: 0px;
                 display: block;
                 background: none;
-                padding-top: 28px;				
+                padding-top: 28px;	
+
                 .active{
                     border-bottom: 1px solid $theme-color-light;	
                     .open{					
                         display: block;			
                     }
-                }					
+                }	
+
                 .open{
                     width: 9px;
                     height: 9px;
@@ -59,7 +62,6 @@
                         }
                     }
     
-                    
                     a{
                         display: inline-block;						
                         width: initial;
@@ -94,5 +96,59 @@
                 }
             }
         }		
+    }
+}
+
+
+.main-navigation{
+    position: relative;
+    border-bottom: 1px solid $theme-color-dark;
+    background: $theme-color-light;
+    width: 100%;
+
+    .fa-bars{
+        color: $white-color;
+        font-size: 26px;	
+        padding: 17px 20px 17px 20px;	
+        border-right: 1px solid $theme-color-dark;
+    }
+
+    .show{
+        display: block;
+    }
+    
+    .dropdown-menu{
+        border-top: 1px solid $theme-color-dark;
+        background: $theme-color-light;
+        
+        li{
+            border-bottom: 1px solid $theme-color-dark;
+            a{
+                display: inline-block;
+                padding: 10px 0 10px 50px;	
+                color: $white-color;
+                text-transform: uppercase;
+                font-size: 17px;
+                width: 85%;
+            }
+            &:hover{
+                background: $theme-color-lightest;
+                transition: all 0.1s ease;
+            }
+        }		
+    }
+    
+    .login-button{
+        width: 20px;
+        height: 30px;
+        overflow: hidden;
+        position: absolute;
+        top: 14px;
+        left: 63px;
+        font-size: 0px;
+        .fa-user{
+            color: white;
+            font-size: 25px;
+        }	
     }
 }

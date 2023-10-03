@@ -115,14 +115,12 @@
 }
 
 @media only screen and (min-width: 1024px) {
-	.main-content{
-
-		.heading-text{
-			float: left!important;
-			display: inline-block;
-		}
-
+	
+	.heading-text{
+		float: left!important;
+		display: inline-block;
 	}
+
 	.form-container{
 		fieldset{
 			padding: 20px 20px;
