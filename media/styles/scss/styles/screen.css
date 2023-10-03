@@ -1329,25 +1329,24 @@ body {
 }
 
 .dropdown-button {
-  display: block;
-  background-color: pink;
+  display: none;
   position: absolute;
   z-index: 200;
   height: 60px;
-  width: 63px;
+  width: 60px;
   top: 0;
   left: 0;
   border-right: 1px solid #ea7a03;
 }
-.dropdown-button .fa-bars {
-  display: none;
-}
 @media only screen and (max-width: 1024px) {
-  .dropdown-button .fa-bars {
-    color: #ffffff;
-    font-size: 26px;
-    padding: 17px 20px 17px 20px;
+  .dropdown-button {
+    display: block;
   }
+}
+.dropdown-button .fa-bars {
+  color: #ffffff;
+  font-size: 26px;
+  padding: 17px 20px 17px 20px;
 }
 
 .footer-container {
