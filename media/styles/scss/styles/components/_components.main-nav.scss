@@ -1,154 +1,151 @@
-@media only screen and (min-width: 1024px) {
-    
-    .navigation-container{
-        height: 60px;
-        background: $white-color;
-        border-bottom: 1px solid $theme-color-dark;
-        margin-bottom: 10px;
-        position: relative;
-                    
-        .main-navigation{
-            width: 1024px;			
-            margin: 0 auto;
-            border: 0;
-            
-            ul{
-                width: 90%;
-                float: left;
-                
-                .fa-bars{
-                    display: none;
-                }
+.navigation-container{
+    height: 60px;
+    background: $white-color;
+    border-bottom: 1px solid $theme-color-dark;
+    margin-bottom: 10px;
+    position: relative;
+
+    @media only screen and (max-width: 1024px) {
+        background: $theme-color-light;
+    }
+
+
+    .main-navigation{
+        width: 1024px;			
+        margin: 0 auto;
+        border: 0;
+
+        @media only screen and (max-width: 1024px) {
+            position: relative;
+            border-bottom: 1px solid $theme-color-dark;
+            width: 100%;
+            background: $theme-color-light;
+        }
+        
+        ul {
+            width: 90%;
+            float: left;
+
+            @media only screen and (max-width: 1024px) {
+                width: 100%;
+                float: inherit;
+            }
+        }
+
+        .dropdown-menu {
+            border-top: 0;
+            display: block;
+            background: 0 0;
+            padding-top: 28px;
+
+            @media only screen and (max-width: 1024px) {
+                display: none;	  
+                padding-top: 0; 
             }
 
-            .show{
-                display: block;
-            }		
-
-            .dropdown-menu{
-                border-top: 0px;
-                display: block;
-                background: none;
-                padding-top: 28px;	
-
-                .active{
-                    border-bottom: 1px solid $theme-color-light;	
-                    .open{					
-                        display: block;			
-                    }
-                }	
-
-                .open{
-                    width: 9px;
-                    height: 9px;
-                    display: none;
-                    top: 24px;
-                    left: 45%;
-                    right: -45%;				
-                    position: absolute;
-                    background: url(../../../images/huisstijl/open.png) 0px 0px no-repeat;
+            .active{
+                border-bottom: 1px solid $theme-color-light;	
+                @media only screen and (max-width: 1024px) {
+                    border-bottom: 1px solid $theme-color-dark;
                 }
-                
-                li{
-                    display: inline-block;
-                    border-bottom: 0px;					
-                    padding-bottom: 9px;
-                    
-                    &:hover{
-                        background: none;	
-                        border-bottom: 1px solid $theme-color-light;	
-                        .open{
-                            display: block;
-                        }
-                    }
-    
-                    a{
-                        display: inline-block;						
-                        width: initial;
-                        padding: 0px 10px 0px 10px;
-                        line-height: 5px;						
-                        color: $theme-color-lightest;
-                        white-space: nowrap; 
-                        position: relative;
-                        &:hover{
-                            color: $theme-color-dark;
-
-                        }
-                    }
-                }		
+                .open{					
+                    display: block;			
+                }
             }	
-            .login-button{
-                width: 123px;
-                height: 30px;
-                font-size: 17px;
-                top: 21px;
-                left: 84%; 
-                text-transform: uppercase;
-                color: $theme-color-light;
-                .fa-user{
-                    margin-right: 10px;
-                        color: $theme-color-light;
-                }	
+
+            .open{
+                width: 9px;
+                height: 9px;
+                display: none;
+                top: 24px;
+                left: 45%;
+                right: -45%;				
+                position: absolute;
+                background: url(../../../images/huisstijl/open.png) 0px 0px no-repeat;
+            }
+            
+            li{
+                display: inline-block;
+                border-bottom: 0px;					
+                padding-bottom: 9px;
+
+                @media only screen and (max-width: 1024px) {
+                    border-bottom: 1px solid $theme-color-dark;
+                    display: block;
+                    padding-top: 9px;
+                }
                 
                 &:hover{
-                    border-bottom: 1px solid $theme-color-light;
-                        color: $theme-color-dark;
+                    background: none;	
+                    border-bottom: 1px solid $theme-color-light;	
+                    .open{
+                        display: block;
+                    }
                 }
-            }
-        }		
-    }
+
+                a{
+                    display: inline-block;						
+                    width: initial;
+                    padding: 0px 10px 0px 10px;
+                    line-height: 5px;						
+                    color: $theme-color-lightest;
+                    white-space: nowrap; 
+                    position: relative;
+                    font-size: 17px;
+
+                    @media only screen and (max-width: 1024px) {
+                      
+                            display: inline-block;
+                            padding: 10px 0 10px 50px;	
+                            color: $white-color;
+                            text-transform: uppercase;
+                            
+                            width: 85%;
+                        
+                    }
+
+                    &:hover{
+                        color: $theme-color-dark;
+
+                    }
+                }
+            }		
+        }
+
+        .show {
+            display: block;
+            position: absolute;
+            z-index: 50;
+            top: 61px;
+            background: $theme-color-light;
+        }	
+    }		
 }
 
 
-.main-navigation{
-    position: relative;
-    border-bottom: 1px solid $theme-color-dark;
-    background: $theme-color-light;
-    width: 100%;
 
+
+.dropdown-button {
+    display: block;
+    background-color: pink;
+    position: absolute;
+    z-index: 200;
+    height: 60px;
+    width: 63px;
+    top: 0;
+    left: 0;
+    border-right: 1px solid $theme-color-dark;
     .fa-bars{
-        color: $white-color;
-        font-size: 26px;	
-        padding: 17px 20px 17px 20px;	
-        border-right: 1px solid $theme-color-dark;
+        display: none;
     }
+    @media only screen and (max-width: 1024px) {
 
-    .show{
-        display: block;
-    }
-    
-    .dropdown-menu{
-        border-top: 1px solid $theme-color-dark;
-        background: $theme-color-light;
+        .fa-bars{
+            color: $white-color;
+            font-size: 26px;	
+            padding: 17px 20px 17px 20px;	
         
-        li{
-            border-bottom: 1px solid $theme-color-dark;
-            a{
-                display: inline-block;
-                padding: 10px 0 10px 50px;	
-                color: $white-color;
-                text-transform: uppercase;
-                font-size: 17px;
-                width: 85%;
-            }
-            &:hover{
-                background: $theme-color-lightest;
-                transition: all 0.1s ease;
-            }
-        }		
-    }
-    
-    .login-button{
-        width: 20px;
-        height: 30px;
-        overflow: hidden;
-        position: absolute;
-        top: 14px;
-        left: 63px;
-        font-size: 0px;
-        .fa-user{
-            color: white;
-            font-size: 25px;
-        }	
+        }
+
     }
 }
