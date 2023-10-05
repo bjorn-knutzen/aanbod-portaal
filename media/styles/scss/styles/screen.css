@@ -1354,13 +1354,6 @@ body {
   width: 100%;
   min-height: 30px;
 }
-@media only screen and (max-width: 1024px) {
-  .footer-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-}
 
 .footer {
   max-width: 1024px;
@@ -1496,15 +1489,21 @@ body {
   width: 100%;
   max-width: 1024px;
   display: block;
+  min-height: 690px;
   margin: 50px auto;
   position: relative;
 }
-
+@media only screen and (max-width: 1024px) {
+  .main-content {
+    min-height: 410px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .main-content {
     margin: 20px auto;
   }
 }
+
 .link-block-component {
   width: 550px;
   height: 165;
