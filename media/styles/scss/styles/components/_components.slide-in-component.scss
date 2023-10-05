@@ -1,0 +1,116 @@
+.slide-in-component {
+    width: 362px;
+    height: 100%;
+    position: relative;
+    float: left;
+    background: $white-color;
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        position: absolute;
+        left: -100%;
+        top: 0px;
+        transition: all 0.3s ease;
+    }
+    
+    h2 {
+        color: $theme-color-dark;
+        padding: 10px 60px;
+        font-size: 20px;
+    }
+
+    .filter-option-row {
+        overflow: hidden;
+
+        @media only screen and (max-width: 1024px) {
+            width: 100%;
+        }
+
+        // .filter-button {
+        //   display: block;
+        // }
+
+		h2 {
+			color: $theme-color-light;			
+			border-bottom: 1px solid $medium-grey;
+			padding: 10px 60px;
+		}
+
+		.filter-option {
+            padding: 10px 60px;
+			border-bottom: 1px solid $medium-grey;
+			
+			p {
+				display: inline-block;
+				color: $dark-grey;
+			}
+			
+			.check-box-element {
+				float: right;
+				margin-top: 3px;				
+			} 			
+		}
+    }			
+}
+
+.filter-button {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 362px;
+    border-top: 1px solid $medium-grey;	
+    border-bottom: 1px solid $medium-grey;
+    
+    @media only screen and (max-width: 1024px) {
+        padding-left: 10px;
+        display: block;    
+        top: 50px;
+        left: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .displayname {
+        width: 100%;
+        display: inline-block;
+        color: $dark-grey;
+        font-size: 20px;
+        padding: 12px 12px;
+        border-bottom: 1px solid $medium-grey;
+        position:absolute;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        background: $white-color;
+
+        .fa-serach,
+        .fa-times{
+            color: $dark-grey;
+            display: inline-block;
+        }
+    }
+
+    .item-name {
+        color: $dark-grey;
+        margin-left: 10px;
+    }				
+}
+
+.show .filter-button  {
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-top: 0;
+
+    .displayname {
+        background-color: $theme-color-dark;
+        color: $white-color;
+        padding-left: 21px;
+
+        .item-name {
+            color: $white-color;
+        }
+    }
+}
+

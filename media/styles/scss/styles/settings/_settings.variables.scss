@@ -142,19 +142,8 @@ html {
       .popup{
           height: 80%;
           margin-top: 106px;
-          .filter-button{	
-              
-              .displayname{
-                  width: 90%;
-                  display: inline-block;
-                  color: $theme-color-light;
-                  font-size: 20px;
-                  
-                  .fa-times{
-                      color: $dark-grey;
-                  }
-              }
-          }
+
+
                   
       .fa-times{
           display: inline-block;
@@ -173,29 +162,7 @@ html {
   
   @media only screen and (min-width: 1024px) {
 
-        .slide-in-component{
-            width: 362px;
-            height: 100%;
-            position: relative;
-            float: left;
-            top: 0;
-            left: 0;
-            .filter-button{
-                display: block;
-                margin: 0;
-                padding: 0;
-                background: $white-color;
-                border-bottom: 1px solid $medium-grey;;
-                width: 362px;
-                .item-naam{
-                    color: $theme-color-dark;
-                    padding-left: 45px;
-                }				
-            }	
-            .filter-option-row{
-                width: 100%;
-            }			
-        }	
+
       
       
       .popup-butten {

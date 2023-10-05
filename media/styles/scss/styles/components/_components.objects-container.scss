@@ -1,0 +1,60 @@
+.objects-container {
+	margin-bottom: 20px;
+	width: 620px;
+	float: right;
+	background: $white-color;
+	padding: 0;
+
+	@media only screen and (max-width: 1024px) {
+		width: 100%;
+		overflow: hidden;
+		padding-top: 60px;
+	}
+
+	.object-item {
+		border-bottom: 1px solid $medium-grey;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		padding: 14px 20px;
+
+		@media only screen and (max-width: 1024px) { 
+			padding: 15px 5%;
+		}
+
+		&:hover{
+			background: $light-grey;
+			transition: all 0.2s ease;
+		}	
+
+		.object-thumb{
+			width: 130px;
+			height: 100px;
+			float: left;
+		}
+
+		.object-specs{
+			width: calc(100% - 140px);
+			float: left;
+			padding-left: 8px;			
+			color: $dark-grey;
+
+			.object-detail{
+				
+				margin-bottom: 3px;
+				float: left;
+				word-break: break-all;				
+				.theme-color-text{
+					color: $theme-color-light;
+				}			
+			}
+			
+			.price-wrapper{	
+				width: 100%;
+				float: right;
+				color: $dark-grey;
+				text-align: right;
+			}
+		}
+	}
+}
+
