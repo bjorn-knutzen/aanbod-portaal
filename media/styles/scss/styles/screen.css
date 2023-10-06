@@ -1557,14 +1557,16 @@ body {
   z-index: 99999;
   background: #ffffff;
 }
-.filter-button .displayname .fa-serach,
-.filter-button .displayname .fa-times {
-  color: #707274;
-  display: inline-block;
-}
 .filter-button .item-name {
   color: #707274;
   margin-left: 10px;
+}
+.filter-button .item-name i {
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.filter-button .item-name[aria-label=filters-active] {
+  visibility: hidden;
 }
 
 .show .filter-button {
@@ -1573,6 +1575,13 @@ body {
   display: block;
   width: 100%;
   border-top: 0;
+}
+.show .filter-button .item-name[aria-label=filters-close] {
+  visibility: hidden;
+  display: none;
+}
+.show .filter-button .item-name[aria-label=filters-active] {
+  visibility: visible;
 }
 .show .filter-button .displayname {
   background-color: #ea7a03;

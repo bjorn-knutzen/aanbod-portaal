@@ -83,17 +83,21 @@
         z-index: 99999;
         background: $white-color;
 
-        .fa-serach,
-        .fa-times{
-            color: $dark-grey;
-            display: inline-block;
-        }
     }
 
     .item-name {
         color: $dark-grey;
         margin-left: 10px;
-    }				
+
+        i {
+            margin-left: -10px;
+            margin-right: 10px;
+        }
+    }		
+    
+    .item-name[aria-label="filters-active"] {
+        visibility: hidden;
+    }
 }
 
 .show .filter-button {
@@ -102,6 +106,15 @@
     display: block;
     width: 100%;
     border-top: 0;
+
+    .item-name[aria-label="filters-close"] {
+        visibility: hidden;
+        display: none;
+    }
+
+    .item-name[aria-label="filters-active"] {
+        visibility: visible; 
+    }
 
     .displayname {
         background-color: $theme-color-dark;
