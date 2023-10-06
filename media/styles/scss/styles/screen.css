@@ -1320,9 +1320,13 @@ body {
   background: #d8d8d8;
   width: 100%;
   min-height: 30px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .footer {
@@ -1626,6 +1630,8 @@ body {
   .main-content {
     min-height: 410px;
     margin-top: 0;
+  }
+  .main-content > h1 {
     background-color: #ffffff;
   }
 }

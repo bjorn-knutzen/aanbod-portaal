@@ -9,7 +9,10 @@
     @media only screen and (max-width: 1024px) {	
         min-height: 410px;	
         margin-top:0;
-        background-color: $white-color;
+   
+        &>h1 {
+          background-color: $white-color;
+        }
     }
 }
 
