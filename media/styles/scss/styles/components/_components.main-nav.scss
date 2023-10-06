@@ -2,21 +2,19 @@
     height: 60px;
     background: $white-color;
     border-bottom: 1px solid $theme-color-dark;
-    // margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
 
     @media only screen and (max-width: 1024px) {
         background: $theme-color-light;
     }
 
-
     .main-navigation{
         width: 1024px;			
         margin: 0 auto;
-        border: 0;
+        position: relative;
 
         @media only screen and (max-width: 1024px) {
-            position: relative;
             border-bottom: 1px solid $theme-color-dark;
             width: 100%;
             background: $theme-color-light;

@@ -1183,6 +1183,7 @@ body {
   height: 60px;
   background: #ffffff;
   border-bottom: 1px solid #ea7a03;
+  margin-bottom: 20px;
   position: relative;
 }
 @media only screen and (max-width: 1024px) {
@@ -1193,11 +1194,10 @@ body {
 .navigation-container .main-navigation {
   width: 1024px;
   margin: 0 auto;
-  border: 0;
+  position: relative;
 }
 @media only screen and (max-width: 1024px) {
   .navigation-container .main-navigation {
-    position: relative;
     border-bottom: 1px solid #ea7a03;
     width: 100%;
     background: #ff9306;
