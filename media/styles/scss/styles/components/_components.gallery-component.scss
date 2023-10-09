@@ -1,0 +1,47 @@
+
+.gallery-component{
+	.thumbnails {
+			padding: 30px 30px 20px 30px;
+		img {
+			height: 73px;			
+			margin: 0 10px 10px 0;
+			cursor:pointer;
+
+			&:hover{
+				height: 72px;
+				width: 98px;
+				opacity: 0.8;
+				border-bottom: 1px solid $theme-color-dark;
+			}
+			
+			&:last-child{
+				padding-right: 0;
+			}
+			
+			
+		}
+	}
+	.preview img {
+		width: 100%;
+	}	
+}
+
+@media only screen and (max-width: 1024px) {
+    .gallery-component{
+		.preview {
+            width: calc(100% - 60px);
+  	
+			padding: 0 30px;	
+            overflow: hidden;
+            height: 250px;
+            aspect-ratio: 3 / 1;
+            display: block;
+            
+            img {
+                width: 100%;
+                transform: translateY(-25%);
+         
+            }	
+		}
+	}
+}

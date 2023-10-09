@@ -1,0 +1,51 @@
+
+/*tab content*/
+.tabs {
+	width: 100%;
+	height: 360px;
+	position: relative;   
+	clear: both;	
+
+	.tab {
+		float: left;
+		width: 50%;		
+	}
+	
+	.tab label {
+		width: 100%;
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		padding: 10px 0 10px 0;
+		background: $lightest-grey;
+		border-bottom: 1px solid $medium-grey;
+		
+		span{
+			margin-left: 30px;
+		}
+	}
+	
+	.tab [type=radio] {
+		display: none;   
+	}
+	
+	.content {
+		max-height: 310px;
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 43px;
+		border: 0;
+	}
+	
+	[type=radio]:checked ~ label {
+		background: $light-grey;
+		border-bottom: 1px solid $medium-grey;
+		z-index: 2;
+	}
+	
+	[type=radio]:checked ~ label ~ .content {
+		z-index: 1;
+	}
+}

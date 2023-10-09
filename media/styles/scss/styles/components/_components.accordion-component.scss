@@ -1,0 +1,107 @@
+
+/*--accordion component--*/ 
+.accordion-component{
+	overflow: hidden;
+	color: $dark-grey;
+	
+	.accordion-section-title{
+		width:100%;
+		padding: 18px 15px 15px 50px;
+		display:inline-block;
+		color: $dark-grey;
+		border-top: 1px solid $medium-grey;
+		transition:all linear 0.15s;
+		text-decoration: none;
+		background: url(../../../images/closed.png) 30px 23px no-repeat $white-color;		
+		&:hover{
+			background-color: $light-grey;
+		}
+	}
+
+	.accordion-section-title{
+		font-weight: bold;
+		text-align: center;
+		padding-left: 0;
+	}
+	
+	.accordion-section-title.active{
+		color: $theme-color-light;
+		background: url(../../../images/huisstijl/open.png)30px 23px no-repeat $lightest-grey;
+		.accordion-section-content{
+			border-bottom: 1px solid $medium-grey;
+		}
+
+		&:hover{
+			background-color: $light-grey;
+		}
+	}
+		
+	.accordion-section-content {		
+		display: none;		
+		.description-area {				
+			p{
+				display: inline-block;
+				padding: 0 30px 0 30px;
+			}		
+		}
+		
+		h3 {
+			display: block;
+			padding: 20px 30px 20px 30px;
+		}	
+
+        
+        .feature-table{
+
+            .row{
+                border-top: 1px solid $medium-grey;
+            }
+            .row:nth-child(odd){
+                background: $lightest-grey;					
+            } 
+            .row:last-child{
+                border-bottom: 1px solid $medium-grey;
+            } 				
+            .left, .right{			
+                display: inline-block;
+                width: 49%;					
+            }				
+            .left{					
+                font-weight: bold;		
+        
+            }				
+            .right{
+                border-left: 1px solid $medium-grey;	 
+            
+            }
+            .content{
+                padding: 15px 30px;
+                vertical-align:top;
+                display: inline-block;
+                .totaal{
+                    border-top: 1px solid $medium-grey;
+                    margin: 5px 0 5px 0;
+                    display: inline-block;
+                    line-height: 2;						
+                }
+            }
+        }
+	}
+}
+
+.info-page{
+	.accordion-component{
+		.accordion-section-content{
+			.description-area{
+				h3{
+					padding: 20px 30px 0px 30px;
+				}
+
+				p{
+					padding: 20px 30px 20px 30px;
+					display: inline-block;
+				}
+			}
+		}	
+	}	
+}

@@ -16,58 +16,6 @@
 .clearfix { display: block; }
 /* close commented backslash hack */
 
-/*--accordion component--*/ 
-.accordion-component{
-	overflow: hidden;
-	color: $dark-grey;
-	
-	.accordion-section-title{
-		width:100%;
-		padding: 18px 15px 15px 50px;
-		display:inline-block;
-		color: $dark-grey;
-		border-top: 1px solid $lightest-grey;
-		transition:all linear 0.15s;
-		text-decoration: none;
-		background: url(../../../images/closed.png) 30px 23px no-repeat $white-color;		
-		&:hover{
-			background-color: $light-grey;
-		}
-	}
-
-	.accordion-section-title{
-		font-weight: bold;
-		text-align: center;
-		padding-left: 0;
-	}
-	
-	.accordion-section-title.active{
-		color: $theme-color-light;
-		background: url(../../../images/huisstijl/open.png)30px 23px no-repeat $lightest-grey;
-		.accordion-section-content{
-			border-bottom: 1px solid $medium-grey;
-		}
-
-		&:hover{
-			background-color: $light-grey;
-		}
-	}
-		
-	.accordion-section-content{		
-		display: none;		
-		.description-area{				
-			p{
-				display: inline-block;
-				padding: 0 30px 0 30px;
-			}		
-		}
-		
-		h3{
-			display: block;
-			padding: 20px 30px 20px 30px;
-		}	
-	}
-}
 
 /*--lose elements--*/ 
 .link-block-component{
@@ -128,86 +76,7 @@
 		line-height: inherit;
 	}
 }
-
-.gallery-component{
-	.thumbnails {
-			padding: 30px 30px 20px 30px;
-		img {
-			height: 73px;			
-			margin: 0 10px 10px 0;
-			cursor:pointer;
-
-			&:hover{
-				height: 72px;
-				width: 98px;
-				opacity: 0.8;
-				border-bottom: 1px solid $theme-color-dark;
-			}
-			
-			
-			
-			&:last-child{
-				padding-right: 0;
-			}
-			
-			
-		}
-	}
-	.preview img {
-		width: 100%;
-	}	
-}
 	
-/*tab content*/
-.tabs {
-	width: 100%;
-	height: 360px;
-	position: relative;   
-	clear: both;	
-
-	.tab {
-		float: left;
-		width: 50%;		
-	}
-	
-	.tab label {
-		width: 100%;
-		position: relative;
-		cursor: pointer;
-		display: inline-block;
-		padding: 10px 0 10px 0;
-		background: $lightest-grey;
-		border-bottom: 1px solid $medium-grey;
-		
-		span{
-			margin-left: 30px;
-		}
-	}
-	
-	.tab [type=radio] {
-		display: none;   
-	}
-	
-	.content {
-		max-height: 310px;
-		bottom: 0;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 43px;
-		border: 0;
-	}
-	
-	[type=radio]:checked ~ label {
-		background: $light-grey;
-		border-bottom: 1px solid $medium-grey;
-		z-index: 2;
-	}
-	
-	[type=radio]:checked ~ label ~ .content {
-		z-index: 1;
-	}
-}
 /*pop-up component*/
 	
 .overlay{
@@ -252,11 +121,6 @@
 		overflow-y: scroll;
 	}
 		
-	.gallery-component{
-		.preview{			
-			padding: 0 30px;			
-		}
-	}	
 }
 
 /*---color---*/
@@ -284,22 +148,6 @@ $check-box-checked: #ff9306;
 	background-size: cover;
 }	
 
-.info-page{
-	.accordion-component{
-		.accordion-section-content{
-			.description-area{
-				h3{
-					padding: 20px 30px 0px 30px;
-				}
-
-				p{
-					padding: 20px 30px 20px 30px;
-					display: inline-block;
-				}
-			}
-		}	
-	}	
-}
 
 
 
@@ -342,54 +190,6 @@ $check-box-checked: #ff9306;
 			float: right;
 		}
 	}
-
-	.accordion-component{			
-		.accordion-section-content{	
-			.description-area{								
-				.google-frame{
-					width: 100%;
-					height: 280px;
-					border: 0;					
-				}
-			}			
-			.feature-table{
-
-				.row{
-					border-top: 1px solid $medium-grey;
-				}
-				.row:nth-child(odd){
-					background: $lightest-grey;					
-				} 
-				.row:last-child{
-					border-bottom: 1px solid $medium-grey;
-				} 				
-				.left, .right{
-					min-height: 70px;					
-					display: inline-block;
-					width: 49%;					
-				}				
-				.left{					
-					font-weight: bold;		
-			
-				}				
-				.right{
-					border-left: 1px solid $medium-grey;	 
-				
-				}
-				.content{
-					padding: 15px 30px;
-					vertical-align:top;
-					display: inline-block;
-					.totaal{
-						border-top: 1px solid $medium-grey;
-						margin: 5px 0 5px 0;
-						display: inline-block;
-						line-height: 2;						
-					}
-				}
-			}
-		}
-	}	
 }
 
 #carousel_container{
@@ -401,17 +201,7 @@ $check-box-checked: #ff9306;
 
 @media only screen and (min-width: 480px) {
 	.object-detail-page{
-		.accordion-component{						
-			.accordion-section-content{	
-				.feature-table{
-					.left, .right{
-						min-height: 55px;					
-						display: inline-block;
-						width: 49%;					
-					}	
-				}
-			}
-		}
+
 		.object-item{
 			.share-component{
 				.addthis_toolbox{
@@ -462,7 +252,6 @@ $check-box-checked: #ff9306;
 	/*-------share-component-----*/
 	.object-specs{
 
-
 		.share-component{
 			width: 180px;
 			position: absolute;
@@ -480,57 +269,6 @@ $check-box-checked: #ff9306;
 
 @media only screen and (min-width: 1024px) {	
 	
-	.object-detail-page{
-		background: $white-color;
-
-		.accordion-component{
-
-			.accordion-section-content{	
-
-				.description-area{				
-
-					.object-item{
-						cursor:auto;
-						&:hover{
-							background: none;
-						}
-						.object-thumb{
-							width: 182px;
-							height: 121px;
-						}
-					
-						.object-specs{
-							padding-left: 15px;
-							
-							.object-detail{
-								min-height: 69px;
-							}							
-							.price-wrapper{
-								text-align: left; 
-							}		
-						}
-					}				
-				
-					.google-frame{
-						width: 560px;
-						margin: 10px 30px 0 30px;						
-					}
-				}			
-			}
-		}	
-	}	
-	
-	.tabs {		
-		.content {
-			top: 33px;			
-		}
-	}
-
-	.head-button{
-		width: 620px;	
-		float: right;		
-	}		
-
 	#carousel_container{
 		height: 620px; 
 		width: 345px;
