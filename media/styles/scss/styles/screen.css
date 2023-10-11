@@ -1433,12 +1433,13 @@ body {
   float: right;
   background: #ffffff;
   padding: 0;
+  border-top: 1px solid #d8d8d8;
 }
 @media only screen and (max-width: 1024px) {
   .objects-container {
     width: 100%;
     overflow: hidden;
-    padding-top: 60px;
+    margin-bottom: 0;
   }
 }
 .objects-container .object-item {
@@ -1450,6 +1451,9 @@ body {
 @media only screen and (max-width: 1024px) {
   .objects-container .object-item {
     padding: 15px 5%;
+  }
+  .objects-container .object-item:first-child {
+    margin-top: 60px;
   }
 }
 .objects-container .object-item:hover {
@@ -1558,6 +1562,11 @@ body {
   top: 0;
   left: 0;
   background: #ffffff;
+}
+@media only screen and (max-width: 335px) {
+  .filter-button .displayname {
+    max-height: 30px;
+  }
 }
 .filter-button .item-name {
   color: #707274;

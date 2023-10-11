@@ -81,6 +81,10 @@
         top: 0;
         left: 0;
         background: $white-color;
+
+        @media only screen and (max-width: 335px) {
+            max-height: 30px;
+        }
     }
 
     .item-name {
