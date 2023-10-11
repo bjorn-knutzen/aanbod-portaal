@@ -1,5 +1,5 @@
 .navigation-container{
-    height: 60px;
+    height: 40px;
     background: $white-color;
     border-bottom: 1px solid $theme-color-dark;
     margin-bottom: 20px;
@@ -7,6 +7,8 @@
 
     @media only screen and (max-width: 1024px) {
         background: $theme-color-light;
+        height: 60px;
+        margin-bottom: 0;
     }
 
     .main-navigation{
@@ -34,7 +36,7 @@
             border-top: 0;
             display: block;
             background: 0 0;
-            padding-top: 28px;
+            padding-top: 10px;
 
             @media only screen and (max-width: 1024px) {
                 display: none;	  
@@ -90,6 +92,7 @@
                     white-space: nowrap; 
                     position: relative;
                     font-size: 17px;
+                    text-transform: uppercase;
 
                     @media only screen and (max-width: 1024px) {
                       
