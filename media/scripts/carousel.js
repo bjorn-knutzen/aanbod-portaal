@@ -1,6 +1,6 @@
-var aanbod = aanbod || {};
 
-aanbod.carousel = function () {
+
+carousel = function () {
 	
 	function initialize() {
 		

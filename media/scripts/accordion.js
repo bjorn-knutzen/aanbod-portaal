@@ -1,6 +1,6 @@
-var aanbod = aanbod || {};
 
-aanbod.accordion = function () {
+
+accordion = function () {
 	
 	function initialize() {
 		

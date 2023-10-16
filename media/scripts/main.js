@@ -1,10 +1,10 @@
 $(document).ready(function() {	
 	
-	aanbod.dropDown.initialize();
+	dropDown.initialize();
 	
-	aanbod.carousel.initialize();
+	carousel.initialize();
 	
-	aanbod.accordion.initialize();
+	accordion.initialize();
 
 	aanbod.scrollToAnchor.initialize();
 	

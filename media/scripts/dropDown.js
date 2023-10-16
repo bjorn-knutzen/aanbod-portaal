@@ -1,6 +1,6 @@
-var aanbod = aanbod || {};
+
 		
-aanbod.dropDown = function () {
+dropDown = function () {
 	
 	function initialize() {
 		
