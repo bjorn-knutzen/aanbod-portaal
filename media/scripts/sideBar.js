@@ -2,11 +2,11 @@
 sideBar = function () {
 	
 	function initialize() {
-		const elementClicked = document.querySelector(".filter-button");
-		const elementYouWantToShow = document.querySelector(".slide-in-component");
+		const actionButton = document.querySelector(".filter-button");
+		const elementToShow = document.querySelector(".slide-in-component");
 
-		elementClicked.addEventListener("click", ()=>{
-			elementYouWantToShow.classList.toggle("show");
+		actionButton.addEventListener("click", ()=>{
+			elementToShow.classList.toggle("show");
 		});
 	}	
 	return {

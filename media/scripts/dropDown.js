@@ -2,9 +2,11 @@
 dropDown = function () {
 	function initialize() {
 
-		$('.dropdown-button').on('click', function(e) {
-			$('.dropdown-menu').toggleClass("show");
-			e.preventDefault();
+		const actionButton = document.querySelector(".dropdown-button");
+		const elementToShow = document.querySelector(".dropdown-menu");
+
+		actionButton.addEventListener("click", ()=>{
+			elementToShow.classList.toggle("show");
 		});
 	}	
 	return {
