@@ -1,7 +1,7 @@
 $(document).ready(function() {	
-	sideBar.initialize();
 	dropDown.initialize();
+	sideBar.initialize();
 	carousel.initialize();
 	accordion.initialize();
-	aanbod.scrollToAnchor.initialize();	
+	aanbod.scrollToAnchor.initialize();
 });

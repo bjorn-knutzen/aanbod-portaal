@@ -1290,7 +1290,7 @@ body {
 .navigation-container .main-navigation .dropdown-menu li a:hover {
   color: #ea7a03;
 }
-.navigation-container .main-navigation .show {
+.navigation-container .main-navigation .showMenu {
   display: block;
   position: absolute;
   z-index: 50;
@@ -1580,26 +1580,31 @@ body {
   visibility: hidden;
 }
 
-.show .filter-button {
+/*----- filter component -----*/
+.showFilters {
+  left: 0px !important;
+}
+
+.showFilters .filter-button {
   top: 0;
   left: 0;
   display: block;
   width: 100%;
   border-top: 0;
 }
-.show .filter-button .item-name[aria-label=filters-close] {
+.showFilters .filter-button .item-name[aria-label=filters-close] {
   visibility: hidden;
   display: none;
 }
-.show .filter-button .item-name[aria-label=filters-active] {
+.showFilters .filter-button .item-name[aria-label=filters-active] {
   visibility: visible;
 }
-.show .filter-button .displayname {
+.showFilters .filter-button .displayname {
   background-color: #ea7a03;
   color: #ffffff;
   padding-left: 21px;
 }
-.show .filter-button .displayname .item-name {
+.showFilters .filter-button .displayname .item-name {
   color: #ffffff;
 }
 
@@ -1913,11 +1918,6 @@ body {
   color: #707274;
   padding-top: 10px;
   font-size: 17px;
-}
-
-/*----- filter component -----*/
-.show {
-  left: 0px !important;
 }
 
 .social-xl {

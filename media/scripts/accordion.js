@@ -1,4 +1,4 @@
-accordion = function () {
+accordionNew = function () {
 	console.log('initialize accordion');
 	function initialize() {
 	

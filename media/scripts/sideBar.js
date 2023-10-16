@@ -1,12 +1,14 @@
 
 sideBar = function () {
-	
-	function initialize() {
-		const actionButton = document.querySelector(".filter-button");
-		const elementToShow = document.querySelector(".slide-in-component");
 
-		actionButton.addEventListener("click", ()=>{
-			elementToShow.classList.toggle("show");
+	function initialize() {
+		console.log('initialize sideBar');
+
+		const filterButton = document.querySelector(".filter-button");
+		const slideInComponent = document.querySelector(".slide-in-component");
+
+		filterButton.addEventListener("click", ()=>{
+			slideInComponent.classList.toggle("showFilters");
 		});
 	}	
 	return {
