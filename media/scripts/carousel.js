@@ -1,5 +1,3 @@
-
-
 carousel = function () {
 	
 	function initialize() {

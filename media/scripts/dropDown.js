@@ -1,5 +1,3 @@
-
-		
 dropDown = function () {
 	
 	function initialize() {

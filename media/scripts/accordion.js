@@ -1,7 +1,4 @@
-
-
 accordion = function () {
-	
 	function initialize() {
 		
 		var $accordionComponent = $('.accordion-component');
