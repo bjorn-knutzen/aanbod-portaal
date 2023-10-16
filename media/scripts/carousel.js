@@ -1,5 +1,5 @@
 carousel = function () {
-	
+	console.log('initialize carousel');
 	function initialize() {
 		
 		var $carousel = $('#carousel_ul');

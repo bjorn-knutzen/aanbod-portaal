@@ -1,6 +1,7 @@
 accordion = function () {
+	console.log('initialize accordion');
 	function initialize() {
-		
+	
 		var $accordionComponent = $('.accordion-component');
 
 		close_accordion_section = function(){
