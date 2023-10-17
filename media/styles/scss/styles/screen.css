@@ -1621,15 +1621,13 @@ body {
   border-top: 1px solid #d8d8d8;
   transition: all linear 0.15s;
   text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 0;
   background: url(../../../images/closed.png) 30px 23px no-repeat #ffffff;
 }
 .accordion-component .accordion-section-title:hover {
   background-color: #e1e1e1;
-}
-.accordion-component .accordion-section-title {
-  font-weight: bold;
-  text-align: center;
-  padding-left: 0;
 }
 .accordion-component .accordion__active .accordion-section-title {
   color: #ff9306;

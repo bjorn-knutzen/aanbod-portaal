@@ -3,11 +3,6 @@
 .accordion-component{
 	color: $dark-grey;
 	overflow: hidden;
-	.accordion-section {
-		// overflow: hidden;
-		// background: $white-color;
-		// height: auto;
-	}
 
 	.accordion-section-title{
 		width:100%;
@@ -17,16 +12,13 @@
 		border-top: 1px solid $medium-grey;
 		transition:all linear 0.15s;
 		text-decoration: none;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 0;
 		background: url(../../../images/closed.png) 30px 23px no-repeat $white-color;		
 		&:hover{
 			background-color: $light-grey;
 		}
-	}
-
-	.accordion-section-title{
-		font-weight: bold;
-		text-align: center;
-		padding-left: 0;
 	}
 
 	.accordion__active {
@@ -54,7 +46,6 @@
 		background-color: transparent;
 		overflow: hidden;
 		
-	
 		.description-area {				
 			p {
 				display: inline-block;
