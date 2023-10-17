@@ -1,9 +1,14 @@
 
 /*--accordion component--*/ 
 .accordion-component{
-	overflow: hidden;
 	color: $dark-grey;
-	
+	overflow: hidden;
+	.accordion-section {
+		// overflow: hidden;
+		// background: $white-color;
+		// height: auto;
+	}
+
 	.accordion-section-title{
 		width:100%;
 		padding: 18px 15px 15px 50px;
@@ -23,23 +28,35 @@
 		text-align: center;
 		padding-left: 0;
 	}
+
+	.accordion__active {
 	
-	.accordion-section-title.active{
-		color: $theme-color-light;
-		background: url(../../../images/huisstijl/open.png)30px 23px no-repeat $lightest-grey;
-		.accordion-section-content{
-			border-bottom: 1px solid $medium-grey;
+		.accordion-section-title {
+			color: $theme-color-light;
+			background: url(../../../images/huisstijl/open.png)30px 23px no-repeat $lightest-grey;
+		
+			&:hover{
+				background-color: $light-grey;
+			}
 		}
 
-		&:hover{
-			background-color: $light-grey;
+		.accordion-section-content {
+			border-bottom: 1px solid $medium-grey;
+			visibility: visible;
+			transition: max-height 0.50s ease-out;
 		}
 	}
-		
+
 	.accordion-section-content {		
-		display: none;		
+		visibility: hidden;
+		max-height: 0;
+		transition: max-height 0.50s ease-out;
+		background-color: transparent;
+		overflow: hidden;
+		
+	
 		.description-area {				
-			p{
+			p {
 				display: inline-block;
 				padding: 0 30px 0 30px;
 			}		
@@ -86,18 +103,18 @@
                 }
             }
         }
-	}
+	}	
 }
 
-.info-page{
-	.accordion-component{
-		.accordion-section-content{
-			.description-area{
-				h3{
+.info-page {
+	.accordion-component {
+		.accordion-section-content {
+			.description-area {
+				h3 {
 					padding: 20px 30px 0px 30px;
 				}
 
-				p{
+				p {
 					padding: 20px 30px 20px 30px;
 					display: inline-block;
 				}

@@ -1610,8 +1610,8 @@ body {
 
 /*--accordion component--*/
 .accordion-component {
-  overflow: hidden;
   color: #707274;
+  overflow: hidden;
 }
 .accordion-component .accordion-section-title {
   width: 100%;
@@ -1631,18 +1631,24 @@ body {
   text-align: center;
   padding-left: 0;
 }
-.accordion-component .accordion-section-title.active {
+.accordion-component .accordion__active .accordion-section-title {
   color: #ff9306;
   background: url(../../../images/huisstijl/open.png) 30px 23px no-repeat #f6f6f6;
 }
-.accordion-component .accordion-section-title.active .accordion-section-content {
-  border-bottom: 1px solid #d8d8d8;
-}
-.accordion-component .accordion-section-title.active:hover {
+.accordion-component .accordion__active .accordion-section-title:hover {
   background-color: #e1e1e1;
 }
+.accordion-component .accordion__active .accordion-section-content {
+  border-bottom: 1px solid #d8d8d8;
+  visibility: visible;
+  transition: max-height 0.5s ease-out;
+}
 .accordion-component .accordion-section-content {
-  display: none;
+  visibility: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  background-color: transparent;
+  overflow: hidden;
 }
 .accordion-component .accordion-section-content .description-area p {
   display: inline-block;
