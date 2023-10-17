@@ -2,7 +2,6 @@
 dropDown = function () {
 
 	function initialize() {
-		console.log('initialize dropDown');
 		const dropdownButton = document.querySelector(".dropdown-button");
 		const dropdownMenu = document.querySelector(".dropdown-menu");
 
