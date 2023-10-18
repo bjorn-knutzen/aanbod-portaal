@@ -1,12 +1,14 @@
 accordion = function () {
-	
+	console.log('accordion');
 	function initialize() {
+		console.log("initialize accordion");
 		const accordions = document.querySelectorAll(".accordion-section");
 
 		const openAccordion = (accordion) => {
 			const content = accordion.querySelector(".accordion-section-content");
 			accordion.classList.add("accordion__active");
 			content.style.maxHeight = content.scrollHeight + "px";
+			console.log("click");
 		};
 
 		const closeAccordion = (accordion) => {
