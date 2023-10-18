@@ -1,7 +1,11 @@
 
+console.log('dropDownMenu');
+
 dropDown = function () {
+	console.log('dropDownMenu Function');
 
 	function initialize() {
+		console.log('dropDownMenu initialize');
 		const dropdownButton = document.querySelector(".dropdown-button");
 		const dropdownMenu = document.querySelector(".dropdown-menu");
 
@@ -11,6 +15,7 @@ dropDown = function () {
 	}	
 	
 	return {
-        initialize: initialize
-    };
+		initialize: initialize
+	};
 }();
+

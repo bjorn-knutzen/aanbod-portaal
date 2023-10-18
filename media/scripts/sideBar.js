@@ -1,6 +1,6 @@
 
 sideBar = function () {
-
+	console.log('sideBar');
 	function initialize() {
 		console.log('initialize sideBar');
 

@@ -1,9 +1,14 @@
 
+// import {
+// 	dropDownMenu
+// } from './dropDown.js';
+
+// console.log('main js loaded', dropDownMenu);
+
 document.addEventListener("DOMContentLoaded", function() {
 	console.log('main js loaded');
 	dropDown.initialize();
-	accordion.initialize();	
 	sideBar.initialize();
-	// carousel.initialize();
-	// aanbod.scrollToAnchor.initialize();
+
+	accordion.initialize();	
 });
