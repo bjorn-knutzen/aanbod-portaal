@@ -4,7 +4,7 @@ console.log('dropDownMenu');
 dropDown = function () {
 	console.log('dropDownMenu Function');
 
-	function initialize() {
+	
 		console.log('dropDownMenu initialize');
 		const dropdownButton = document.querySelector(".dropdown-button");
 		const dropdownMenu = document.querySelector(".dropdown-menu");
@@ -12,7 +12,7 @@ dropDown = function () {
 		dropdownButton.addEventListener("click", ()=>{
 			dropdownMenu.classList.toggle("showMenu");
 		});
-	}	
+	
 	
 	return {
 		initialize: initialize
