@@ -1,0 +1,56 @@
+h1 {
+	padding: 12px 12px;
+	font-size: $font-large;
+	margin: 0;
+	padding: 0;
+	color: $secondary-color-200;
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;	
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	text-decoration: upper-case;	
+	color: $tertiary-color-100;
+}
+
+h5 {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: $primary-color-800;
+}
+
+p {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: $secondary-color-200;
+}
+
+.bold {
+	font-weight: bold;
+}

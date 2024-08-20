@@ -2,9 +2,9 @@
 	margin-bottom: 20px;
 	width: 620px;
 	float: right;
-	background: $white-color;
+	background: $primary-color-100;
 	padding: 0;
-	border-top: 1px solid $medium-grey;
+	border-top: 1px solid $primary-color-700;
 
 	@media only screen and (max-width: 1024px) {
 		width: 100%;
@@ -13,7 +13,7 @@
 	}
 
 	.object-item {
-		border-bottom: 1px solid $medium-grey;
+		border-bottom: 1px solid $primary-color-700;
 		cursor: pointer;
 		transition: all 0.2s ease;
 		padding: 14px 20px;
@@ -22,14 +22,12 @@
 			padding: 15px 5%;
 
 			&:first-child {
-				margin-top: 60px;
+				margin-top: 45px;
 			}
 		}
 
-	
-
 		&:hover{
-			background: $light-grey;
+			background: $primary-color-600;
 			transition: all 0.2s ease;
 		}	
 
@@ -43,7 +41,7 @@
 			width: calc(100% - 140px);
 			float: left;
 			padding-left: 8px;			
-			color: $dark-grey;
+			color: $primary-color-800;
 
 			.object-detail{
 				
@@ -51,14 +49,14 @@
 				float: left;
 				word-break: break-all;				
 				.theme-color-text{
-					color: $theme-color-light;
+					color: $secondary-color-200;
 				}			
 			}
 			
 			.price-wrapper{	
 				width: 100%;
 				float: right;
-				color: $dark-grey;
+				color: $primary-color-800;
 				text-align: right;
 			}
 		}

@@ -1,0 +1,19 @@
+
+/*----base----*/	
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+  
+body{
+    height: 100%;
+    background: $primary-color-200;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+  
+.main-container{
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}

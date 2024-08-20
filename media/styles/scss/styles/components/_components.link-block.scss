@@ -1,11 +1,43 @@
 .link-block-component {
     width: 550px;
-    height: 165;
+	min-height: 116px;
     margin: 20px auto 20px auto;
-    
-    @media only screen and (max-width: 480px) {	
+	display: block;
+	padding-top: 50px ;
+	border-bottom: 1px solid $primary-color-700;
+	box-shadow: 0;
+	transition:all linear 0.15s;
+
+	@media only screen and (max-width: 480px) {	
         width: 100%;
         margin: -20px auto -20px auto;
     }
 
-} 
+    &:hover {
+		box-shadow: 0px 0px 2px 0px $primary-color-300;
+		transition:all linear 0.15s;
+		background: $primary-color-500;
+	}
+    
+	h2 {
+		font-size: 35px;
+		color: $secondary-color-200;
+		line-height: 0;
+		vertical-align: text-top;
+		text-align: center;
+
+		.greater-then-big-icon{
+			height: 20px;
+			width: 8px;
+			display: inline-block;
+			background: url(../../../images/huisstijl/greater-then-big-icon.gif) 0 2px no-repeat;
+		}
+	}
+
+	p {
+		text-align: center;
+		color: $primary-color-800;
+		padding-top: 10px;
+		font-size: 17px;
+	}
+}

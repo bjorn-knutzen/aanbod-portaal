@@ -1,38 +1,38 @@
 
 /*--accordion component--*/ 
 .accordion-component{
-	color: $dark-grey;
+	color: $primary-color-800;
 	overflow: hidden;
 
 	.accordion-section-title{
 		width:100%;
 		padding: 18px 15px 15px 50px;
 		display:inline-block;
-		color: $dark-grey;
-		border-top: 1px solid $medium-grey;
+		color: $primary-color-800;
+		border-top: 1px solid $primary-color-700;
 		transition:all linear 0.15s;
 		text-decoration: none;
 		font-weight: bold;
 		text-align: center;
 		padding-left: 0;
-		background: url(../../../images/closed.png) 30px 23px no-repeat $white-color;		
+		background: url(../../../images/closed.png) 30px 23px no-repeat $primary-color-100;		
 		&:hover{
-			background-color: $light-grey;
+			background-color: $primary-color-600;
 		}
 	}
 
 	.accordion__active {
 		.accordion-section-title {
-			color: $theme-color-light;
-			background: url(../../../images/huisstijl/open.png)30px 23px no-repeat $lightest-grey;
+			color: $secondary-color-200;
+			background: url(../../../images/huisstijl/open.png)30px 23px no-repeat $primary-color-500;
 		
 			&:hover{
-				background-color: $light-grey;
+				background-color: $primary-color-600;
 			}
 		}
 
 		.accordion-section-content {
-			border-bottom: 1px solid $medium-grey;
+			border-bottom: 1px solid $primary-color-700;
 			visibility: visible;
 			transition: max-height 0.50s ease-out;
 		}
@@ -61,13 +61,13 @@
         .feature-table{
 
             .row{
-                border-top: 1px solid $medium-grey;
+                border-top: 1px solid $primary-color-700;
             }
             .row:nth-child(odd){
-                background: $lightest-grey;					
+                background: $primary-color-500;					
             } 
             .row:last-child{
-                border-bottom: 1px solid $medium-grey;
+                border-bottom: 1px solid $primary-color-700;
             } 				
             .left, .right{			
                 display: inline-block;
@@ -78,7 +78,7 @@
         
             }				
             .right{
-                border-left: 1px solid $medium-grey;	 
+                border-left: 1px solid $primary-color-700;	 
             
             }
             .content{
@@ -86,7 +86,7 @@
                 vertical-align:top;
                 display: inline-block;
                 .totaal{
-                    border-top: 1px solid $medium-grey;
+                    border-top: 1px solid $primary-color-700;
                     margin: 5px 0 5px 0;
                     display: inline-block;
                     line-height: 2;						

@@ -6,15 +6,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Ons koopaanbod</title>
+		<title>Ons koopaanbod 2023</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="stylesheet" href="../media/styles/reset.css">
-        <link rel="stylesheet" href="../media/styles/normalize.min.css">
         <link rel="stylesheet" href="../media/styles/scss/styles/screen.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    </head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">	
+	</head>
 	<body class="huisstijl-body">
 		<div class="main-container">
 			<div class="head-container">
@@ -31,11 +29,11 @@
 								<li>
 									<a href="../index.html">Home<i class="open">&nbsp;</i></a>
 								</li>
-								<li>
-									<a href="../ons-huuraanbod/ons-huuraanbod.html">Ons huuraanbod<i class="open">&nbsp;</i></a>
-								</li>
 								<li class="active">
 									<a href="#">Ons koopaanbod<i class="open">&nbsp;</i></a>
+								</li>
+								<li>
+									<a href="../ons-koopaanbod/ons-koopaanbod.html">Ons koopaanbod<i class="open">&nbsp;</i></a>
 								</li>
 								<li>
 									<a href="../informatie/informatie.html">Informatie<i class="open">&nbsp;</i></a>
@@ -48,14 +46,21 @@
 			</div>			
 			<div class="main-content clearfix">
 				<div class="slide-in-component">
-					<div class="filter-button head-button">
+					<div class="filter-button">
 						<a href="#" class="displayname">
-							<span class="item-naam">
-								Filter op
+							<span aria-label="filters-close"  class="item-name">
+								<i class="fa fa-search"></i>
+								Toon zoekfilters
 							</span>
-							<i class="fa fa-times"></i>
+							<span aria-label="filters-active"  class="item-name">
+								<i class="fa fa-times"></i>
+								Sluit zoekfilters
+							</span>
 						</a>						
 					</div>
+					<h2>
+						Filter op
+					</h2>
 					<div class="filter-option-row">
 						<div class="filter-option">
 							<p>Met inschrijftijd <span>(7)</span></p>
@@ -163,24 +168,15 @@
 				</div>
 			
 				<h1>
-					Ons koopaanbod
+					Ons huuraanbod
 				</h1>	
-				
-				<div class="filter-button head-button">
-					<a href="#" class="displayname">
-						<i class="fa fa-search"></i>
-						<span class="item-name">
-							Toon zoekfilters
-						</span>
-					</a>						
-				</div>
-				
+								
 				<div class="objects-container clearfix">
 					<a href="ons-aanbod-object/object.html" class="object-item clearfix">
 						<img class="object-thumb" src="../media/images/object-images/object-image.jpg" alt="object afbeelding">
 						<div class="object-specs">	
 							<p class="object-detail">								
-								<span class="theme-color-text">Predikant 28</span><br />
+								<span class="theme-color-text">Eerste item Predikant 28</span><br />
 								Vessem<br />
 								Bovenwoning<br/>
 								<span class="bold">76 m&sup2; . 2 kamers</span>
@@ -419,9 +415,8 @@
 				</div>	
 			</div>	
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
-		<script src="../media/scripts/main.js"></script>			
-		<script src="../media/scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>	
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+		<script src="../media/scripts/main.js"></script>
+		<script src="../media/scripts/dropDown.js"></script>
+		<script src="../media/scripts/sideBar.js"></script>
 	</body>
 </html>

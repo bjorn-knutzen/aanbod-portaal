@@ -7,7 +7,7 @@
 	left: 84%; 
 	right: 0;
 	text-transform: uppercase;
-	color: $theme-color-light;
+	color: $secondary-color-200;
 
 	@media only screen and (max-width: 1024px) {
 		width: 20px;
@@ -19,7 +19,7 @@
 
 	.fa-user {
 		margin-right: 10px;
-		color: $theme-color-light;
+		color: $secondary-color-200;
 
 		@media only screen and (max-width: 1024px) { 
 			color: white;
@@ -28,7 +28,7 @@
 	}	
 	
 	&:hover{
-		border-bottom: 1px solid $theme-color-light;
-			color: $theme-color-dark;
+		border-bottom: 1px solid $secondary-color-200;
+			color: $secondary-color-300;
 	}
 }

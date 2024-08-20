@@ -8,56 +8,35 @@
 	content: " ";
 	clear: both;
 	height: 0;
-	}
-	
+}
+
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
+/*---color---*/
+$secondary-color-100: #ffab3d;
+$secondary-color-200: #ff9306;
+$tertiary-color-100: #730037;
+$secondary-color-300: #ea7a03;
+$secondary-color-200: #ff9306;
 
+.huisstijl-body{
+	background:  url(../../../images/huisstijl/background-body.jpg) no-repeat center center fixed; 
+	overflow-x: hidden;		 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}	
 
 /*--lose elements--*/ 
-.link-block-component{
-	min-height: 116px;
-	display: block;
-	padding-top: 50px ;
-	border-bottom: 1px solid $medium-grey;
-	box-shadow: 0px;
-	transition:all linear 0.15s;
-	
-	&:hover{
-		box-shadow: 0px 0px 2px 0px $shadow-color;
-		transition:all linear 0.15s;
-		background: $lightest-grey;
-	}
-	
-	h2{
-		font-size: 35px;
-		color: $theme-color-light;
-		line-height: 0;
-		vertical-align: text-top;
-		 text-align: center;
-		.greater-then-big-icon{
-			height: 20px;
-			width: 8px;
-			display: inline-block;
-			background: url(../../../images/huisstijl/greater-then-big-icon.gif) 0 2px no-repeat;
-		}
-	}
-	p{
-		text-align: center;
-		color: $dark-grey;
-		padding-top: 10px;
-		font-size: 17px;
-	}
-}
-
 .social-xl{
     width: 35px;
     height: 35px;
-    background: $white-color;
-	color: $dark-grey;
+    background: $primary-color-100;
+	color: $primary-color-800;
     border-radius: 100%;
     line-height: 35px;
     text-align: center;
@@ -69,88 +48,14 @@
 		line-height: inherit;
 	}
 }
-	
-/*pop-up component*/
-	
-.overlay{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 300ms;
-	visibility: hidden;
-	opacity: 0;
-	z-index: 1000;
-	
-	&:target{
-		visibility: visible;
-		opacity: 1;			
-	}
-}
-
-.popup{
-	background: #fff;
-	position: relative;
-	transition: all 300ms ease-in-out;
-	
-	.close{
-		position: absolute;
-		transition: all 200ms;
-		
-		&:hover{
-			color: orange;
-		}
-	}
-	
-	.content{
-		overflow: auto;
-	}
-}
-
-@media only screen and (min-width: 1024px) {
-	body{		
-		overflow-y: scroll;
-	}
-		
-}
-
-/*---color---*/
-$theme-color-lightest: #ffab3d;
-$theme-color-light: #ff9306;
-$theme-color-medium: #730037;
-$theme-color-dark: #ea7a03;
-
-$check-box-checked: #ff9306;
-
-.header{
-	.brand-logo{
-		margin-top: 5px;
-		height: 45px;		
-		background: url(../../../images/huisstijl/logo-woon-compagnie.png) no-repeat;
-	}
-}
-	
-.huisstijl-body{
-	background:  url(../../../images/huisstijl/background-body.jpg) no-repeat center center fixed; 
-	overflow-x: hidden;		 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}	
-
-
-
 
 .object-detail-page{
-	background: $white-color;
+	background: $primary-color-100;
 	.default-button{
-		color: $white-color;
+		color: $primary-color-100;
 		float: left;
 		&:hover{
-			background: $theme-color-lightest;
+			background: $secondary-color-100;
 		}
 	}
 
@@ -184,14 +89,6 @@ $check-box-checked: #ff9306;
 		}
 	}
 }
-
-#carousel_container{
-	position: absolute;
-	left: -100%;
-	top: 0px;
-	transition: all 0.3s ease;	
-}
-
 @media only screen and (min-width: 480px) {
 	.object-detail-page{
 
@@ -221,7 +118,6 @@ $check-box-checked: #ff9306;
 }
 
 @media only screen and (min-width: 768px) {
-
 	.object-detail-page{
 		.object-item{			
 			.object-specs{
@@ -259,132 +155,3 @@ $check-box-checked: #ff9306;
 	}
 	
 }
-
-@media only screen and (min-width: 1024px) {	
-	
-	#carousel_container{
-		height: 620px; 
-		width: 345px;
-		overflow: hidden;	
-		position: relative;
-		float: left;
-		top: 0;
-		left: 0;
-		background: white;
-		transition: all 0.3s ease;
-			
-		#prev_scroll, #next_scroll{ 
-			height: 20px; 
-			width:  100%; 
-			float: left;
-			cursor: pointer;
-
-			.triangle-icon{
-				height: 10px; 
-				width:  15px;
-				margin-right: 10px;
-				margin-left: 50px;
-				display: inline-block;
-				background: url(../../../images/triangle-icon.gif)no-repeat;	
-			}		
-		}
-
-		#prev_scroll{
-			border-top: 1px solid $medium-grey;
-			padding-top: 10px;
-			.triangle-icon{
-				transform: rotate(0deg);			
-			}	
-		}
-
-		#next_scroll{
-			border-bottom: 1px solid $medium-grey;
-			padding-bottom: 10px;
-			.triangle-icon{
-				transform: rotate(180deg);			
-			}	
-		}
-			
-		h4{
-			font-size: 18px;
-			color: $theme-color-light;
-			margin: 5px 0 5px 48px;
-			font-weight: normal;
-		}
-			
-			#carousel_inner {
-				width: 590px;
-				height: 510px;
-				float: left;
-				overflow: hidden;
-
-				#carousel_ul {
-					position: relative;
-					left: 0;
-					list-style-type: none;
-					margin: 0px;
-					padding: 0px;
-				
-				 li{                             
-					width: 345px;
-					border-bottom: 1px solid $medium-grey;
-					padding: 15px 45px 15px 45px;	
-					&:hover{
-						background: $lightest-grey;
-						transition: all 0.2s ease;
-					}										
-					.object-item{
-						cursor: pointer;
-						transition: all 0.2s ease;
-				
-						.object-thumb{
-							width: 96px;
-							height: 72px;
-							float: left;
-						}		
-						.object-specs{
-							width:150px;
-							float: left;
-							padding-left: 8px;
-							color: $dark-grey;
-							
-							.object-detail{				
-								float: left;
-								word-break: break-all;				
-								.theme-color-text{
-									color: $theme-color-light;
-								}			
-							}
-							
-							.price-wrapper{	
-								width: 110px;
-								float: left;
-								color: $dark-grey;
-								font-weight: bold;
-								text-align: left;					
-							}
-						}
-					}	
-				}
-			}
-		}
-	}
-}
-
-h1{
-	padding: 12px 12px;
-}
-
-@media only screen and (min-width: 1024px) {
-	.main-content {
-								
-		h1{
-			width: 550px;
-			float: right;
-			border-bottom: 1px solid $lightest-grey;
-			background: $white-color;
-			padding: 14px 45px 14px 25px ;
-		}		
-	}	
-}
-

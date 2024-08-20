@@ -1,37 +1,46 @@
-  .main-content{
-    width: 100%;
-    max-width: 1024px;
-    display: block;
-    min-height: 365px;
-    margin: 50px auto;
-    position: relative;
+.main-content{
+	width: 100%;
+	max-width: 1024px;
+	display: block;
+	min-height: 365px;
+	margin: 50px auto;
+	position: relative;
+					
+	h1 {
+		width: 550px;
+		float: right;
+		border-bottom: 1px solid $primary-color-500;
+		background: $primary-color-100;
+		padding: 14px 45px 14px 25px;
 
-    @media only screen and (max-width: 1024px) {	
-        min-height: 410px;	
-        margin-top:0;
-   
-        &>h1 {
-          background-color: $white-color;
-        }
-    }
+		@media only screen and (max-width: 1024px) {	
+			width: 100%;
+			padding: 14px 45px 14px 25px ;
+			float: left;
+		}
+	}		
 
-    
-	.head-button {
-    width: calc(100% - 24px);
-    padding: 15px 12px;
-    display: inline-block;
-    font-size: 18px;
-    background: $lightest-grey;
-    color: $dark-grey;
-    border-bottom: 1px solid $medium-grey;
-  
-    &:hover {
-      background-color: $light-grey;
-    }
+	@media only screen and (max-width: 1024px) {	
+		min-height: 410px;	
+		margin-top:0;
+	}
+	
+	.head-button {				
+		width: calc(100% - 24px);
+		padding: 15px 12px;
+		display: inline-block;
+		font-size: 18px;
+		background: $primary-color-500;
+		color: $primary-color-800;
+		border-bottom: 1px solid $primary-color-700;
+	
+		&:hover {
+		background-color: $primary-color-600;
+		}
 
-    .greater-then-icon-reverse-big {
-      margin-right: 10px;
-    }
+		.greater-then-icon-reverse-big {
+		margin-right: 10px;
+		}
 	}	
 }
 

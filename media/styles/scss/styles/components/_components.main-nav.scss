@@ -1,12 +1,12 @@
 .navigation-container{
     height: 40px;
-    background: $white-color;
-    border-bottom: 1px solid $theme-color-dark;
+    background: $primary-color-100;
+    border-bottom: 1px solid $secondary-color-300;
     margin-bottom: 20px;
     position: relative;
 
     @media only screen and (max-width: 1024px) {
-        background: $theme-color-light;
+        background: $secondary-color-200;
         height: 60px;
         margin-bottom: 0;
     }
@@ -17,9 +17,9 @@
         position: relative;
 
         @media only screen and (max-width: 1024px) {
-            border-bottom: 1px solid $theme-color-dark;
+            border-bottom: 1px solid $secondary-color-300;
             width: 100%;
-            background: $theme-color-light;
+            background: $secondary-color-200;
         }
         
         ul {
@@ -44,9 +44,9 @@
             }
 
             .active{
-                border-bottom: 1px solid $theme-color-light;	
+                border-bottom: 1px solid $secondary-color-200;	
                 @media only screen and (max-width: 1024px) {
-                    border-bottom: 1px solid $theme-color-dark;
+                    border-bottom: 1px solid $secondary-color-300;
                 }
                 .open{					
                     display: block;			
@@ -70,14 +70,14 @@
                 padding-bottom: 9px;
 
                 @media only screen and (max-width: 1024px) {
-                    border-bottom: 1px solid $theme-color-dark;
+                    border-bottom: 1px solid $secondary-color-300;
                     display: block;
                     padding-top: 9px;
                 }
                 
                 &:hover{
                     background: none;	
-                    border-bottom: 1px solid $theme-color-light;	
+                    border-bottom: 1px solid $secondary-color-200;	
                     .open{
                         display: block;
                     }
@@ -88,7 +88,7 @@
                     width: initial;
                     padding: 0px 10px 0px 10px;
                     line-height: 5px;						
-                    color: $theme-color-lightest;
+                    color: $secondary-color-100;
                     white-space: nowrap; 
                     position: relative;
                     font-size: 17px;
@@ -98,7 +98,7 @@
                       
                             display: inline-block;
                             padding: 10px 0 10px 50px;	
-                            color: $white-color;
+                            color: $primary-color-100;
                             text-transform: uppercase;
                             
                             width: 85%;
@@ -106,7 +106,7 @@
                     }
 
                     &:hover{
-                        color: $theme-color-dark;
+                        color: $secondary-color-300;
 
                     }
                 }
@@ -118,9 +118,13 @@
             position: absolute;
             z-index: 50;
             top: 61px;
-            background: $theme-color-light;
+            background: $secondary-color-200;
         }	
     }		
+}
+
+.dropdown-menu{
+    display: none;
 }
 
 .dropdown-button {
@@ -131,14 +135,14 @@
     width: 60px;
     top: 0;
     left: 0;
-    border-right: 1px solid $theme-color-dark;
+    border-right: 1px solid $secondary-color-300;
 
     @media only screen and (max-width: 1024px) {
         display: block;
     }
 
     .fa-bars{
-        color: $white-color;
+        color: $primary-color-100;
         font-size: 26px;	
         padding: 17px 20px 17px 20px;	
     }

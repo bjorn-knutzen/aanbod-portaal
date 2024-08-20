@@ -17,8 +17,8 @@
 		cursor: pointer;
 		display: inline-block;
 		padding: 10px 0 10px 0;
-		background: $lightest-grey;
-		border-bottom: 1px solid $medium-grey;
+		background: $primary-color-500;
+		border-bottom: 1px solid $primary-color-700;
 		
 		span{
 			margin-left: 30px;
@@ -40,8 +40,8 @@
 	}
 	
 	[type=radio]:checked ~ label {
-		background: $light-grey;
-		border-bottom: 1px solid $medium-grey;
+		background: $primary-color-600;
+		border-bottom: 1px solid $primary-color-700;
 		z-index: 2;
 	}
 	
